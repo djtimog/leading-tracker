@@ -35,12 +35,46 @@ ul {
   list-style: none;
   margin-top: 20px;
   padding-left: 0;
+  font-size: large;
 }
 
 li {
   margin-top: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+  gap: 5px;
+}
+
+.link-container {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 250px;
+  color: #5f9341;
 }
 
 a {
   color: #5f9341;
+}
+
+.cross {
+  color: red;
+  cursor: pointer;
+  padding: 3px;
+  background-color: inherit;
+  border-color: white;
+}
+
+.copy {
+  color: blue;
+  cursor: pointer;
+  background-color: inherit;
+  border-color: white;
+  padding: 3px;
+}
+
+.copy:hover {
+  text-decoration: underline;
 }
